@@ -8,13 +8,13 @@
 enum TypeMarker {
     NUMBER = 0x00,  // f64
     // BOOLEAN: u8 = 0x01, // bool
-    // STRING: u8 = 0x02,  // UTF-8 string 
+    // STRING: u8 = 0x02,  // UTF-8 string
 }
 
 #[derive(Debug)]
 struct Value {
     t: TypeMarker,
-    bytes: [u8; 8]    
+    bytes: [u8; 8]
 }
 
 impl From<f64> for Value {
